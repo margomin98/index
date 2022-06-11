@@ -1,13 +1,11 @@
 .overlay {
-  height: 100%;
+  height: 0;
   position: fixed;
-  /* Stay in place */
   z-index: 999;
   width: 100%;
   /* Sit on top */
   background-color: white;
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
+  overflow-y: hidden;
   transition: 0.5s;
 }
 .overlay a {
@@ -39,6 +37,7 @@
 
 .instagram-media {
   min-width: 290px !important;
+  height: 580px;
 }
 
 .owl-prev, .owl-next, .owl-nav {
@@ -188,6 +187,12 @@
 }
 .part06 .owl-part06 {
   margin-top: 50px;
+}
+.part06 .owl-part06 p {
+  padding-top: 10px;
+}
+.part06 .owl-part06 img {
+  padding: 0 5px;
 }
 .part06 .owl-part06 div:focus {
   background-color: #f8e4d5;
@@ -396,6 +401,18 @@
     padding-top: 15%;
   }
 
+  .owl-prev {
+    position: absolute;
+    left: 54%;
+    top: 80%;
+  }
+
+  .owl-next {
+    position: absolute;
+    left: 87%;
+    top: 80%;
+  }
+
   .part06 {
     display: flex;
     justify-content: center;
@@ -403,33 +420,12 @@
   .part06 #doc_slide {
     margin-right: 80px;
   }
-  .part06 .owl-prev {
-    position: absolute;
-    left: 53%;
-    top: 70%;
-  }
-  .part06 .owl-next {
-    position: absolute;
-    right: 13%;
-    top: 70%;
-  }
   .part06 .round {
     position: relative;
   }
-  .part06 .round .part06_arrow {
-    position: absolute;
-    top: 50px;
-    left: -5px;
-  }
-  .part06 .round .part06_arrow_design {
-    position: absolute;
-    left: 9%;
-    top: 42px;
-    font-size: 15px;
-  }
   .part06 .round .round-border {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     border: 1px dashed black;
     border-radius: 50%;
     -webkit-animation: spin 30s infinite;
@@ -438,23 +434,25 @@
     top: 18px;
     left: 25px;
   }
+  .part06 .part06_arrow {
+    padding-top: 55px;
+  }
+  .part06 .part06_arrow_design {
+    position: absolute;
+    left: 50px;
+    top: 45px;
+  }
   .part06 .part_06_info {
     text-align: left;
     align-self: center;
   }
   .part06 .owl-part06 {
     height: 200px;
-    width: 500px;
-    padding-top: 100px;
+    width: 570px;
+    padding: 90px 0 0 40px;
   }
   .part06 .owl-part06 div:focus {
     padding: 0 5px;
-  }
-  .part06 .owl-part06 p {
-    padding-top: 10px;
-  }
-  .part06 .owl-part06 img {
-    padding: 0 15px;
   }
 
   .part07_xl {
@@ -625,7 +623,16 @@
     padding-bottom: 20px;
   }
 }
-@media (min-width: 576px) and (max-width: 820px) {
+@media (max-width: 377px) {
+  .owl-part06 {
+    left: 30px !important;
+  }
+
+  .instagram-media {
+    height: 550px;
+  }
+}
+@media (min-width: 576px) and (max-width: 821px) {
   .ham {
     display: flex;
     justify-content: space-between;
@@ -794,18 +801,19 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    text-align: center;
+  }
+  .part06 #doc_slide {
+    width: 100%;
+    padding-bottom: 20px;
   }
   .part06 .owl-prev {
-    position: absolute;
-    left: 8%;
-    bottom: 7%;
-    z-index: 1;
+    left: 5%;
+    top: 88%;
   }
   .part06 .owl-next {
-    position: absolute;
-    right: 6%;
-    bottom: 7%;
-    z-index: 1;
+    right: 8%;
+    top: 88%;
   }
   .part06 .round {
     position: relative;
@@ -819,34 +827,28 @@
             animation: spin 30s infinite;
     position: absolute;
     top: 20px;
-    left: 45%;
+    left: 44%;
   }
   .part06 .round .part06_arrow {
     position: absolute;
-    right: 52%;
-    top: 60px;
+    right: 53%;
+    top: 8px;
   }
   .part06 .part06_arrow_design {
-    position: absolute;
-    left: 48.5%;
-    top: 50px;
+    padding: 50px 10px 0 10px;
   }
-
-  .owl-part06 {
-    padding-top: 20%;
-  }
-  .owl-part06 div {
+  .part06 .owl-part06 {
     width: 70%;
-    margin: 0 auto;
+    margin-left: 60px;
   }
-  .owl-part06 div :focus {
-    height: 135px;
-    padding: 0 10px;
+  .part06 .owl-part06 div:focus {
+    height: 180px;
+    padding: 0 5px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
   }
-
-  .part_06_info {
-    text-align: center;
-    padding-top: 50px;
+  .part06 .part_06_info {
+    padding: 0;
   }
 
   .part07_xs {
@@ -1057,19 +1059,22 @@
   }
 
   .part06 {
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
+    text-align: center;
+  }
+  .part06 #doc_slide {
+    width: 100%;
+    padding-bottom: 20px;
   }
   .part06 .owl-prev {
-    position: absolute;
-    right: 85%;
-    bottom: 7%;
+    left: 2px;
+    top: 87%;
   }
   .part06 .owl-next {
-    position: absolute;
-    left: 85%;
-    bottom: 7%;
+    right: -5px;
+    top: 87%;
   }
   .part06 .round {
     position: relative;
@@ -1088,30 +1093,22 @@
   .part06 .round .part06_arrow {
     position: absolute;
     right: 55%;
-    top: 60px;
+    top: 8px;
   }
   .part06 .part06_arrow_design {
-    position: absolute;
-    left: 47%;
-    top: 50px;
+    padding: 50px 0 0 10px;
   }
   .part06 .owl-part06 {
-    margin: auto;
-    padding-top: 50%;
-    width: 80%;
+    left: 48px;
   }
   .part06 .owl-part06 div:focus {
-    height: 100px;
+    height: 110px;
     padding: 0 5px;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
   }
-  .part06 .owl-part06 p {
-    font-size: 12px;
-  }
   .part06 .part_06_info {
-    text-align: center;
-    padding-top: 50px;
+    padding: 0;
   }
 
   .part07_xs {

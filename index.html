@@ -39,7 +39,8 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="full_navbar">
-                        <div class="navbar_close" style='display:flex'> <a href="javascript:void(0)" class="closebtn"
+                        <div class="navbar_close" style='display:flex'>
+                             <a href="javascript:void(0)" class="closebtn"
                                 onclick="closeNav()">&times;</a>
                             <p class='close_menu'>MENU</p>
                         </div>
@@ -1148,7 +1149,7 @@
 
                                 <div class="doctor_01" tabindex="1">
                                     <img src="./img/index_doctor_02_xl.png" title="劉 厚 耕" alt="馬偕醫院整形外科總醫師">
-                                    <p>眼部精雕權威</p>
+                                    <p>眼整形權威</p>
                                 </div>
 
                                 <div class="doctor_02" tabindex="2">
@@ -1579,7 +1580,7 @@
                             <blockquote class="instagram-media"
                                 data-instgrm-permalink="https://www.instagram.com/p/CaTqql9rKgg/?utm_source=ig_embed&amp;utm_campaign=loading"
                                 data-instgrm-version="14"
-                                style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:0px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                                style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);  margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                                 <div style="padding:16px;">
                                     <a href="https://www.instagram.com/p/CaTqql9rKgg/?utm_source=ig_embed&amp;utm_campaign=loading"
                                         style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
@@ -2308,21 +2309,12 @@
             nav: true, 
               margin:12,
             navText: [
-                '  <div class="doc_arrow"><img src="./img/arrow_left.png"></div>',
-                '  <div class="doc_arrow"><img src="./img/arrow_right.png"></div>'
+                '  <div class="doc_arrow"><img src="./img/arrow_left_sm.png"></div>',
+                '  <div class="doc_arrow"><img src="./img/arrow_right_sm.png"></div>'
             ],
             navContainer: '.dc_arrow',
             responsive: {
-                0: {
-                    items: 3,
-                    margin:15
-                },
-                768: {
-                    items: 4
-                },
-                1000:{
-                 items:3
-                }
+               768:{items:3}
             }
         })
     </script>
@@ -2357,8 +2349,7 @@
 
     <script>
         $('.ig_slide').owlCarousel({
-            center: false,
-            responsiveClass: true,
+            center: true,
             loop: true,
             responsive: {
                 768: {
@@ -2367,7 +2358,7 @@
                 },
            0: {
                     items: 1,
-
+margin:0
        
                 }
             }
