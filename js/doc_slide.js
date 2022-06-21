@@ -3,6 +3,7 @@ const slide_image = document.querySelector("#doc_slide img");
 const caption = document.querySelector(".doctor_info p");
 const caption2 = document.querySelector(".doctor_info span");
 
+
 thumbs.addEventListener("click", function (e) {
   e.stopPropagation();
   if (e.target.nodeName.toLowerCase() == 'img') {
