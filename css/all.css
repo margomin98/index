@@ -5,7 +5,7 @@
   width: 100%;
   /* Sit on top */
   background-color: white;
-  overflow-y: hidden;
+  overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -116,7 +116,7 @@
   color: #2c2c2cf2;
   font-size: 22px;
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   position: absolute;
   z-index: 3;
   left: 1%;
@@ -967,6 +967,14 @@
   .part02 .part02_maintitle h1 {
     font-size: 31px;
   }
+  .part02_content .nice {
+    color: #343d46;
+    font-weight: 900;
+  }
+  .part02_content .clinic {
+    font-weight: 300;
+    padding-top: 30px;
+  }
   .part02_case_left,
   .part02_case_right {
     width: 504px;
@@ -1073,40 +1081,38 @@
     font-size: 15px;
   }
   .part06_content {
-    margin-left: 10%;
+    margin-left: 5%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .part06_content .part_06_info {
-    margin-left: 50px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    margin-top: 50px;
   }
   .part06_content #doc_slide {
     width: 40%;
   }
   .part06_content .owl-prev {
     position: absolute;
-    left: 57%;
+    left: 54%;
     top: 70%;
   }
   .part06_content .owl-next {
     position: absolute;
-    right: 13%;
+    right: 15%;
     bottom: 21%;
   }
   .part06_content .owl-part06 {
     width: 320px;
     padding-top: 30px;
-    left: 10%;
+    left: 12%;
   }
   .part06_content .owl-part06 p {
     font-size: 15px;
   }
   .part06_content .owl-part06 div:focus {
     padding: 5px;
+    height: 130px;
   }
   .part06_content .round {
     position: relative;
