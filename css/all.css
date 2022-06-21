@@ -1238,7 +1238,7 @@
     left: 50%;
     top: 38%;
     width: 100%;
-    height: 256px;
+    height: 187px;
     text-align: center;
     padding-top: 22%;
     background: rgba(3, 3, 3, 0.534);
@@ -1252,14 +1252,14 @@
     text-decoration: none;
     color: white;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 5px;
   }
   .part08 .hover_text :hover {
     border-bottom: #caab82 3px double;
   }
   .part08 .hover_text:hover {
-    top: 37%;
+    top: 33%;
     left: 50%;
     opacity: 1;
   }
