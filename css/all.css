@@ -1151,12 +1151,15 @@
     padding: 20px;
   }
   .part08 {
-    padding: 3% 15%;
+    margin-bottom: 40px;
   }
   .part08 .part08_title {
-    padding-bottom: 30px;
+    padding: 30px 0;
     font-size: 30px;
     font-weight: 800;
+  }
+  .part08 .location_dunhua {
+    margin-right: 50px;
   }
   .part08 .location {
     display: -webkit-box;
@@ -1166,48 +1169,98 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .part08 .location span {
+  .part08 .location .content-image {
+    position: relative;
+    width: 470px;
+    height: 280px;
+  }
+  .part08 .location .location_dunhua .location_xinyi.content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+  }
+  .part08 .location .location_dunhua:hover .location_xinyi:hover .content-overlay {
+    opacity: 1;
+  }
+  .part08 span {
     border-left: 1px solid black;
     height: 50px;
     margin-top: 20px;
   }
-  .part08 .location .location_info {
+  .part08 .location_info {
     background-color: #e0ccb2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 50%;
-    padding: 5px 60px;
+    width: 470px;
+    height: 95px;
+    bottom: -1px;
+    position: absolute;
   }
-  .part08 .location .location_info .location_name {
-    font-size: 15px;
+  .part08 .location_info .location_name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-weight: 800;
-    width: 48%;
-    padding: 0 10px 23px 0;
+    font-size: 20px;
+    width: 50%;
+    margin-bottom: 7%;
   }
-  .part08 .location .location_info .address {
-    padding: 10px 0 0 20px;
+  .part08 .location_info .address {
+    padding: 0 0 15px 20px;
+    width: 75%;
+    font-size: 15px;
   }
-  .part08 .location .location_dunhua {
-    background: url(../img/index_location_01.jpg);
-  }
-  .part08 .location .location_dunhua p {
+  .part08 .location_info p {
     -ms-flex-item-align: end;
         align-self: end;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .part08 .location .location_xinyi {
-    background: url(../img/index_location_02.jpg);
-    background-size: cover;
+  .part08 .location_dunhua,
+  .part08 .location_xinyi {
+    position: relative;
+    width: auto;
   }
-  .part08 .location .location_xinyi p {
-    -ms-flex-item-align: end;
-        align-self: end;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .part08 .hover_text {
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    width: 100%;
+    height: 256px;
+    text-align: center;
+    padding-top: 22%;
+    background: rgba(3, 3, 3, 0.534);
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .part08 .hover_text a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .part08 .hover_text :hover {
+    border-bottom: #caab82 3px double;
+  }
+  .part08 .hover_text:hover {
+    top: 37%;
+    left: 50%;
+    opacity: 1;
   }
 }
 
