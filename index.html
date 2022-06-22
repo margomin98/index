@@ -72,7 +72,7 @@
                             aria-controls="list-messages">
                             <p>微整注射</p>
                              <a class="list-group-item list-group-item-action" id="fat-remove" data-bs-toggle="list"
-                            href="#list_fat-remove" role="tab" aria-controls="list-settings">
+                            href="#list_fat_remove" role="tab" aria-controls="list-settings">
                             <p>體雕減脂</p>
                         </a>
                         </a> <a class="list-group-item list-group-item-action" id="face_surgery" data-bs-toggle="list"
@@ -84,18 +84,24 @@
                         </a>
                          
                         <a class="list-group-item list-group-item-action" id="client_case" data-bs-toggle="list"
-                        href="#list_fat_remove" role="tab" aria-controls="list-settings">
+                        href="#list_client_case" role="tab" aria-controls="list-settings">
                         <p>客戶案列</p>
                     </a> 
                         
                       
                         <a class="list-group-item list-group-item-action" id="news" data-bs-toggle="list"
                             href="#list_news" role="tab" aria-controls="list-settings">
-                            <p>最新消息</p>
-                        </a> <a class="list-group-item list-group-item-action" id="client_consult" data-bs-toggle="list"
-                            href="#list_client_consult" role="tab" aria-controls="list-settings">
-                            <p style='width:90px'>綫上咨詢</p>
-                        </a> <a class="list-group-item list-group-item-action" id="shop" data-bs-toggle="list"
+                            <p>活動内容</p>
+                        </a> 
+                        <a class="list-group-item list-group-item-action" id="surgery_knowledge" data-bs-toggle="list"
+                            href="#list_surgery_knowledge" role="tab" aria-controls="list-settings">
+                            <p style='width:90px'>醫美新知</p>
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="3d_simulate" data-bs-toggle="list"
+                        href="#list_3d_simulate" role="tab" aria-controls="list-settings">
+                        <p style='width:90px'>3D 模擬</p>
+                    </a>
+                         <a class="list-group-item list-group-item-action" id="shop" data-bs-toggle="list"
                             href="#list_shop" role="tab" aria-controls="list-settings">
                             <p style='width:120px'>NC+保養品商城</p>
                         </a>
@@ -160,7 +166,7 @@
                                 <li><span>平胸縮胸手術</span></li>
                             </ul>
                         </div>
-                        <div class="tab-pane fade" id="list_fat=remove" role="tabpanel"
+                        <div class="tab-pane fade" id="list_fat_remove" role="tabpanel"
                             aria-labelledby="list-settings-list">
                             <ul>
                                 <li>EXILIS ELITE 超V電波體雕</span></li>
@@ -181,10 +187,10 @@
                                 <li><span>交通資訊</span></li>
                             </ul>
                         </div>
-                        <div class="tab-pane fade" id="list_news" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="tab-pane fade" id="list_client_case" role="tabpanel" aria-labelledby="list-settings-list">
                             <ul>
-                                <li><span>素人案例分享</span></li>
-                                <li><span>醫美新知</span></li>
+                                <li><span>術前術後照</span></span></li>
+                                <li><span>案例分享</span></li>
                             </ul>
                         </div>
                     </div>
@@ -451,19 +457,15 @@
                         
                             <li class="btn-group dropend news">
                                 <button type="button" class="btn " data-bs-toggle="dropdown" aria-expanded="false">
-                                    最新消息
+                                    活動内容
                                 </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">素人案例分享</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">醫美新知</a>
-                                    </li>
-                                </ul>
+                         
                             </li>
-                            <li class="btn-group customer_service">
-                                <a href="#">綫上咨詢</a>
+                            <li class="btn-group surgery_knowledge">
+                                <a href="#">醫美新知</a>
+                            </li>
+                            <li class="btn-group 3d_surgery">
+                                <a href="#">3D 模擬</a>
                             </li>
                             <li class="btn-group store">
                                 <a href="#">NC+保養品商城</a>
@@ -1582,7 +1584,7 @@
 
                     <div class="owl-carousel ig_slide owl-theme">
 
-                        <div class="ig01">
+                        <div class="ig01" data-stellar-background-ratio="0.2">
                             <blockquote class="instagram-media"
                                 data-instgrm-permalink="https://www.instagram.com/p/CaTqql9rKgg/?utm_source=ig_embed&amp;utm_campaign=loading"
                                 data-instgrm-version="14"
